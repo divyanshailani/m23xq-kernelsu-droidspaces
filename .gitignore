@@ -1,0 +1,6 @@
+*.img
+*.apk
+*.zip
+__pycache__/
+*.pyc
+.DS_Store

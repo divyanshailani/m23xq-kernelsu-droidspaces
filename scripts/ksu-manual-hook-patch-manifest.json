@@ -1,0 +1,46 @@
+{
+  "tree": "<lab>/sources/ksu-rsuntk-manualhook/kernel-source",
+  "ksu": "<lab>/sources/ksu-rsuntk-manualhook/ksu-src/KernelSU-648e5988cf421172769f80ce07f86331b548c053",
+  "ksu_kernel_symlink": "../../ksu-src/KernelSU-648e5988cf421172769f80ce07f86331b548c053/kernel",
+  "edits": [
+    {
+      "path": "fs/open.c",
+      "sha256_before": "2f7f69b1f77323a271f8967840ce13e85b1d5507a8340780f998566cedae7969",
+      "sha256_after": "a1106aafb7e379960c240e37c7537b55c6a1454d517e65665e0322a9806f9d10",
+      "extern_line": 457,
+      "hook_line": 465
+    },
+    {
+      "path": "fs/stat.c",
+      "sha256_before": "21bca9f3565e5d910948664b411781436c2d4b44dda8f0cb497d491806718e8b",
+      "sha256_after": "2847c4c89fc3c6f80e5d5b01da7dcfd0379f609cb203cc5bcc092b82aa888738",
+      "extern_line": 358,
+      "hook_line": 369
+    },
+    {
+      "path": "fs/exec.c",
+      "sha256_before": "9e9eee18db42ffe82a84a1d5bd56edca265fb8e0bdcaf4915f677af0e173e1c5",
+      "sha256_after": "5dabc8046c36e03e18bbd0888ef20a67c52f2d37efb4000afa341b8dd81fa30d",
+      "extern_line": 1921,
+      "hook_line": 1933
+    },
+    {
+      "path": "fs/read_write.c",
+      "sha256_before": "f3f26e4f07fb8405d62c872aab679a2e570dff0b6a472971e030a17e48726f75",
+      "sha256_after": "fb7bcb38efe61b5445cf8c748a3343f24edcd6a61425bb6c0f4ac85c76e90a3a",
+      "extern_line": 619,
+      "hook_line": 627
+    },
+    {
+      "path": "drivers/input/input.c",
+      "sha256_before": "f07d557bc6a035382a6b95bdeaf48c0e12075f50dd451ea525b8b3399c9f522b",
+      "sha256_after": "a04bdad5c92c27e496532fd8481366ae24c796f34f07d24d4c9678acc079a43c",
+      "extern_line": 369,
+      "hook_line": 378
+    }
+  ],
+  "wiring": {
+    "drivers/Makefile": "6f5a354efc47478b39ba7a6e89ff9e95f8fdb8c2f75da07beda6649e56c25be8",
+    "drivers/Kconfig": "b8265992d3463fe3c25c33237e11d16663f6d2ddc78f7563683d9c8d3e0d6e54"
+  }
+}
