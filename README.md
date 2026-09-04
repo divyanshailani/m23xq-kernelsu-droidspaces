@@ -9,6 +9,11 @@ Built and verified end-to-end on a real device: custom kernel boots Android 14,
 KernelSU root works (`uid=0 ... context=u:r:ksu:s0`), SELinux stays Enforcing, and all
 Droidspaces prerequisites verify live.
 
+> **Want to just flash the prebuilt image?** Grab the [v9 release](../../releases) —
+> the exact BOOT image running on the author's phone, hash-verified — and follow
+> `docs/12-flash-v9-image.md`. **No support, no warranty, no responsibility.**
+> If you'd rather build from source (recommended), everything below applies.
+
 > **Read this first:** This project unlocks a bootloader, flashes a custom boot image,
 > and performs a factory reset. It will **permanently trip Knox** (eFuse), wipe your
 > data, and — critically — **your phone will no longer boot the stock boot image
@@ -27,7 +32,7 @@ Droidspaces prerequisites verify live.
 | `scripts/compare-boot-structure.py` | Boot image structural comparison |
 | `scripts/rehearse-stock-boot-rollback.py` | Off-device rollback rehearsal |
 | `scripts/ksu-manual-hook-patch-manifest.json` | Exact per-file edit manifest for the hook patches |
-| `docs/01…10` | Full engineering history: build report, panic diagnosis, FBE ROT analysis, flash protocol & results, final verification, restore runbook |
+| `docs/01…12` | Full engineering history: build report, panic diagnosis, FBE ROT analysis, flash protocol & results, final verification, restore runbook, **prebuilt v9 image flashing guide (`docs/12`)** |
 
 ## Target device / firmware
 
